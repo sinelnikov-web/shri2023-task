@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c912e5d-888a-42b2-9cdd-37197cad7dea" name="Changes" comment="" />
+    <list default="true" id="9c912e5d-888a-42b2-9cdd-37197cad7dea" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/arrow-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/arrow-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/arrow-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/arrow-left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/bg@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bg@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/cloud-drizzle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/cloud-drizzle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon_list_m@1x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/icon_list_m@1x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon_scheduled.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/icon_scheduled.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon_sun.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/icon_sun.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon_sun_2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/icon_sun_2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon_temperature.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/icon_temperature.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon_temperature_2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/icon_temperature_2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/lato.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/lato.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/babel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendors/babel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendors/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendors/react-with-dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/vendors/react-with-dom.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +58,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/sinelnikov-web/projects/frontend/yandex-optimizations",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -47,6 +70,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/styles" />
+      <recent name="$PROJECT_DIR$/src/assets/fonts" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/assets" />
     </key>
   </component>
@@ -58,7 +85,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688744489564</updated>
-      <workItem from="1688744490715" duration="3878000" />
+      <workItem from="1688744490715" duration="5063000" />
+      <workItem from="1688750183919" duration="2229000" />
     </task>
     <servers />
   </component>
