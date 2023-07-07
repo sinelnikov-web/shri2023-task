@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9c912e5d-888a-42b2-9cdd-37197cad7dea" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/bundle.93b5c476e048e50e3dfd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/bundle.93b5c476e048e50e3dfd.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/bundle.cb9f09adb0741ec71f61.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/bundle.cb9f09adb0741ec71f61.js.LICENSE.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1688744489564</updated>
       <workItem from="1688744490715" duration="5063000" />
-      <workItem from="1688750183919" duration="4139000" />
+      <workItem from="1688750183919" duration="6908000" />
     </task>
     <servers />
   </component>

@@ -2,6 +2,7 @@ import "./assets/styles/reset.css";
 import "./assets/styles/styles.css";
 import ReactDOM from "react-dom";
 import React from 'react';
+import { nanoid } from 'nanoid';
 
 function Header() {
     let [expanded, setExpanded] = React.useState(false);
@@ -168,8 +169,17 @@ const TABS = {
     }
 };
 for (let i = 0; i < 6; ++i) {
-    TABS.all.items = [...TABS.all.items, ...TABS.all.items];
+    TABS.all.items = [
+        ...TABS.all.items,
+        ...TABS.all.items
+    ];
 }
+TABS.all.items = TABS.all.items.map(item => {
+    const newObject = structuredClone(item);
+    newObject.id = nanoid();
+    return newObject;
+});
+console.log(TABS);
 const TABS_KEYS = Object.keys(TABS);
 
 function Main() {
@@ -213,6 +223,30 @@ function Main() {
             });
         }
     };
+    const panelRef = React.useRef();
+    const [start, setStart] = React.useState(0);
+    const itemWidth = 200;
+    const gap = 15;
+    const visibleItems = 10;
+    const getLeftWidth = () => {
+        return start * (itemWidth + gap);
+    }
+    const getRightWidth = () => {
+        return itemWidth * ((TABS[activeTab]?.items.length ?? 0) - start + visibleItems);
+    }
+
+    const onScroll = (e) => {
+        setStart(Math.floor(e.target.scrollLeft / (itemWidth + gap)));
+    }
+
+    React.useEffect(() => {
+        panelRef.current?.addEventListener('scroll', onScroll);
+        return () => {
+            panelRef.current?.removeEventListener('scroll', onScroll);
+        }
+    });
+
+    console.log(TABS[activeTab]?.items.slice(start, start + visibleItems));
 
     return <main className="main">
         <section className="section main__general">
@@ -341,15 +375,17 @@ function Main() {
                 {TABS_KEYS.map(key => (
                     <>
                         {key === activeTab ? (
-                            <div key={key} role="tabpanel" className={'section__panel'} aria-hidden={'false'} id={`panel_${key}`} aria-labelledby={`tab_${key}`}>
+                            <div ref={panelRef} key={key} role="tabpanel" className={'section__panel'} aria-hidden={'false'} id={`panel_${key}`} aria-labelledby={`tab_${key}`}>
                                 <ul className="section__panel-list">
-                                    {TABS[key].items.map((item, index) =>
+                                    <div style={{width: getLeftWidth(), flexShrink: 0}}></div>
+                                    {TABS[key].items.slice(start, start + visibleItems).map((item) =>
                                         <Event
-                                            key={index}
+                                            key={item.id}
                                             {...item}
                                             onSize={onSize}
                                         />
                                     )}
+                                    <div style={{width: getRightWidth()}}></div>
                                 </ul>
                             </div>
                         ) : (
