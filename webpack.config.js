@@ -7,7 +7,7 @@ module.exports = {
     mode: 'production',
     output: {
         filename: "bundle.[contenthash].js",
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, 'docs'),
         clean: true
     },
     plugins: [
